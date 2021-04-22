@@ -8,8 +8,8 @@ class Player extends Character {
      * @param game {Game} La instancia del juego al que pertenece el personaje
      */
     constructor(game) {
-        const height = PLAYER_HEIGHT * game.width / 100,
-            width = PLAYER_WIDTH * game.width / 100,
+        const height = PLAYER_HEIGHT * game.width / FACTOR*ESCALA,
+            width = PLAYER_WIDTH * game.width / FACTOR*ESCALA,
             x = game.width / 2 - width / 2,
             y = game.height - height,
             speed = PLAYER_SPEED,
@@ -32,7 +32,7 @@ class Player extends Character {
      */
     update() {
         if (!this.dead && !this.dragging) {
-            switch (this.game.keyPressed) {
+            /*switch (this.game.keyPressed) {
                 case KEY_LEFT:
                     if (this.x > this.speed) {
                         this.x -= this.speed;
@@ -46,7 +46,7 @@ class Player extends Character {
                 case KEY_SHOOT:
                     this.game.shoot(this);
                     break;
-            }
+            }*/
         }
 
 

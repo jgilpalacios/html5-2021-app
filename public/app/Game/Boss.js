@@ -7,8 +7,8 @@ class Boss extends Opponent /*Character*/ {
      */
     
     constructor(game) {
-        const height = OPPONENT_HEIGHT * game.width / 100,
-            width = OPPONENT_WIDTH * game.width / 100,
+        const height = OPPONENT_HEIGHT * game.width / FACTOR*ESCALA,
+            width = OPPONENT_WIDTH * game.width / FACTOR*ESCALA,
             x = getRandomNumber(game.width - width / 2),
             y = 0,
             speed = BOSS_SPEED,

@@ -8,8 +8,8 @@ class Shot extends Entity {
      * @param character {Character} Personaje del juego que lanza el disparo
      */
     constructor(game, character) {
-        const width = SHOT_WIDTH * game.width / 100;
-        const height = SHOT_HEIGHT * game.width / 100;
+        const width = SHOT_WIDTH * game.width / FACTOR*ESCALA;
+        const height = SHOT_HEIGHT * game.width / FACTOR*ESCALA;
         const x = character.x + character.width / 2 - width / 2;
         const y = character.y + character.height - character.height / 2;
         const speed = SHOT_SPEED;

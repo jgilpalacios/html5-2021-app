@@ -11,10 +11,10 @@ let game;
 
 // Valores constantes
 const OPPONENT_HEIGHT = 5,
-    OPPONENT_PICTURE = "assets/img/malo.png",
-    OPPONENT_PICTURE_DEAD = "assets/img/malo_muerto.png",
-    BOSS_PICTURE = "assets/img/jefe.png",
-    BOSS_PICTURE_DEAD = "assets/img/jefe_muerto.png",
+    OPPONENT_PICTURE = "assets/img/malo.svg",
+    OPPONENT_PICTURE_DEAD = "assets/img/malo_muerto.svg",
+    BOSS_PICTURE = "assets/img/jefe.svg",
+    BOSS_PICTURE_DEAD = "assets/img/jefe_muerto.svg",
     OPPONENT_SPEED = 5,
     BOSS_SPEED = 2*OPPONENT_SPEED,
     OPPONENT_WIDTH = 5,
@@ -24,15 +24,17 @@ const OPPONENT_HEIGHT = 5,
     KEY_SHOOT = "SHOOT",
     MIN_TOUCHMOVE = 20,
     PLAYER_HEIGHT = 5,
-    PLAYER_PICTURE = "assets/img/bueno.png",
-    PLAYER_PICTURE_DEAD = "assets/img/bueno_muerto.png",
+    PLAYER_PICTURE = "assets/img/bueno.svg",
+    PLAYER_PICTURE_DEAD = "assets/img/bueno_muerto.svg",
     PLAYER_SPEED = 20,
     PLAYER_WIDTH = 5,
     SHOT_HEIGHT = 1.5,
     SHOT_SPEED = 20,
-    SHOT_PICTURE_PLAYER = "assets/img/shot1.png",
-    SHOT_PICTURE_OPPONENT = "assets/img/shot2.png",
-    SHOT_WIDTH = 1.5;
+    SHOT_PICTURE_PLAYER = "assets/img/shot1.svg",
+    SHOT_PICTURE_OPPONENT = "assets/img/shot2.svg",
+    SHOT_WIDTH = 1.5,
+    FACTOR=100,
+    ESCALA=2;
 
 
 // Selectores DOM y estado del juego

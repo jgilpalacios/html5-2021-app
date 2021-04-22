@@ -271,6 +271,20 @@ const animation_ConfirmOut = (getTo) =>{
  if (sliderItems.length > 0) {
      sliderItems.forEach((si, i ) => {
          document.addEventListener('mousemove', ev => {
+            let face = si.querySelector('g.face');
+ 
+            let { pageX, pageY } = ev;
+            let { top, bottom, left, right } = face.getBoundingClientRect();
+            let centroid = [left + Math.abs((right - left) / 2), top + Math.abs((top - bottom) / 2)];
+            let distance = [pageX - centroid[0], pageY - centroid[0]];
+            let multip = 0.02*(-1)**i;
+
+            Object.assign(face.style, {
+                transformOrigin: 'center center',
+                transform: `translate(${distance[0] * multip}px, ${distance[1] * multip}px)`
+            });
+        });
+         document.addEventListener('click', ev => {
              let face = si.querySelector('g.face');
  
              let { pageX, pageY } = ev;

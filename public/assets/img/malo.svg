@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 135 141">
+    <g class="char_01">
+        <path fill="#32F5D2" stroke="#586465" stroke-width="4"
+            d="M77.026 15.5l35.94 62.25c4.234 7.333-1.058 16.5-9.526 16.5H31.56c-8.468 0-13.76-9.167-9.526-16.5l35.94-62.25c4.234-7.333 14.818-7.333 19.052 0z"
+            class="body" />
+        <g class="legs">
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M52 95v26.675L37 136" class="leg_02" />
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M83 95v26.675L96 136" class="leg_01" />
+        </g>
+        <g class="face">
+            <g class="eye_l">
+                <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="4" d="M60.5 54.5L49 47" class="eye_brow" />
+                <circle cx="52" cy="60" r="4" fill="#586465" class="eye" />
+            </g>
+            <g class="eye_r">
+                <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="4" d="M70.5 55.5l11-11" class="eye_brow_2" />
+                <circle cx="79" cy="59" r="4" fill="#586465" class="eye_2" />
+            </g>
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M59 80l7.5-8.5 7.5 8" class="mouth" />
+        </g>
+    </g>
+</svg>

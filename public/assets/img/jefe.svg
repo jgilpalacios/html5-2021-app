@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   fill="none"
+   viewBox="0 0 108 128"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="icon4.svg">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1335"
+     inkscape:window-height="743"
+     id="namedview22"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.84375"
+     inkscape:cx="54"
+     inkscape:cy="64"
+     inkscape:window-x="31"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <sodipodi:guide
+       position="-9.220339,128.54237"
+       orientation="0,1"
+       id="guide4156" />
+    <sodipodi:guide
+       position="38.508475,45.016949"
+       orientation="0,1"
+       id="guide4158" />
+    <sodipodi:guide
+       position="0,99.79661"
+       orientation="1,0"
+       id="guide4160" />
+    <sodipodi:guide
+       position="109.55932,98.169492"
+       orientation="1,0"
+       id="guide4162" />
+  </sodipodi:namedview>
+  <g
+     id="g4507">
+    <g
+       transform="matrix(0.73249717,0,0,0.60293859,12.817839,51.380043)"
+       class="legs"
+       id="g6">
+      <path
+         d="m 37.396662,85.495207 0,26.030453 -22.897343,13.97888"
+         class="leg_02"
+         id="path8"
+         inkscape:connector-curvature="0"
+         style="stroke:#586465;stroke-width:4.88197613;stroke-linecap:round;stroke-linejoin:round" />
+      <path
+         d="m 71.963154,85.595904 0,25.899416 21.435656,13.90851"
+         class="leg_01"
+         id="path10"
+         inkscape:connector-curvature="0"
+         style="stroke:#586465;stroke-width:5.06115341;stroke-linecap:round;stroke-linejoin:round" />
+    </g>
+    <path
+       inkscape:transform-center-y="-4.7723275"
+       inkscape:transform-center-x="-0.33173638"
+       d="M 86.793438,103.3942 20.596165,102.69643 0.80369934,39.523459 54.768557,1.1781846 107.91314,40.652472 Z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="1.5813366"
+       sodipodi:arg1="0.95301815"
+       sodipodi:r2="43.113506"
+       sodipodi:r1="56.313892"
+       sodipodi:cy="57.488948"
+       sodipodi:cx="54.175"
+       sodipodi:sides="5"
+       id="path4172"
+       style="opacity:1;fill:#ffff00;fill-opacity:1;stroke:#586465;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       sodipodi:type="star" />
+    <g
+       class="face"
+       id="g14-3"
+       transform="matrix(1.680554,0,0,1.6576722,-55.469562,-43.53008)">
+      <g
+         class="eye_l"
+         id="g16">
+        <path
+           d="M 60.5,54.5 49,47"
+           class="eye_brow"
+           id="path18-6"
+           inkscape:connector-curvature="0"
+           style="stroke:#586465;stroke-width:4;stroke-linecap:round;stroke-linejoin:round" />
+        <circle
+           cx="52"
+           cy="60"
+           r="4"
+           class="eye"
+           id="circle20"
+           style="fill:#586465" />
+      </g>
+      <g
+         class="eye_r"
+         id="g22">
+        <path
+           d="m 70.5,55.5 11,-11"
+           class="eye_brow_2"
+           id="path24"
+           inkscape:connector-curvature="0"
+           style="stroke:#586465;stroke-width:4;stroke-linecap:round;stroke-linejoin:round" />
+        <circle
+           cx="79"
+           cy="59"
+           r="4"
+           class="eye_2"
+           id="circle26"
+           style="fill:#586465" />
+      </g>
+      <path
+         d="m 59,80 7.5,-8.5 7.5,8"
+         class="mouth"
+         id="path28"
+         inkscape:connector-curvature="0"
+         style="stroke:#586465;stroke-width:4;stroke-linecap:round;stroke-linejoin:round" />
+    </g>
+  </g>
+</svg>

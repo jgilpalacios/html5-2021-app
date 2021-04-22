@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   fill="none"
+   viewBox="0 0 108 128"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="icon7.svg">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter5160"
+       x="-0.28169075"
+       width="1.5633815"
+       y="-0.29459835"
+       height="1.5891967">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="12.627799"
+         id="feGaussianBlur5162" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1335"
+     inkscape:window-height="743"
+     id="namedview22"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.84375"
+     inkscape:cx="-38.488791"
+     inkscape:cy="64"
+     inkscape:window-x="31"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <sodipodi:guide
+       position="-9.220339,128.54237"
+       orientation="0,1"
+       id="guide4156" />
+    <sodipodi:guide
+       position="38.508475,45.016949"
+       orientation="0,1"
+       id="guide4158" />
+    <sodipodi:guide
+       position="0,99.79661"
+       orientation="1,0"
+       id="guide4160" />
+    <sodipodi:guide
+       position="109.55932,98.169492"
+       orientation="1,0"
+       id="guide4162" />
+  </sodipodi:namedview>
+  <path
+     sodipodi:type="star"
+     style="opacity:1;fill:#f162c1;fill-opacity:1;stroke:#586465;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path4559"
+     sodipodi:sides="5"
+     sodipodi:cx="54.543593"
+     sodipodi:cy="57.458745"
+     sodipodi:r1="56.570473"
+     sodipodi:r2="21.004223"
+     sodipodi:arg1="0.92588077"
+     sodipodi:arg2="1.5541993"
+     inkscape:flatsided="false"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="M 88.549857,102.66707 54.892186,78.460074 22.056437,103.77076 34.677863,64.280042 0.45916439,40.872822 41.917306,40.673208 53.604736,0.89606264 66.60585,40.263414 108.04778,39.087007 74.624767,63.616982 Z"
+     inkscape:transform-center-x="0.29012459"
+     inkscape:transform-center-y="-5.1253329" />
+  <path
+     sodipodi:type="star"
+     style="opacity:0.99;fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter5160)"
+     id="path4559-5"
+     sodipodi:sides="5"
+     sodipodi:cx="55.069782"
+     sodipodi:cy="58.820186"
+     sodipodi:r1="56.570473"
+     sodipodi:r2="21.004223"
+     sodipodi:arg1="0.92588077"
+     sodipodi:arg2="1.5541993"
+     inkscape:flatsided="false"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="M 89.076045,104.02851 55.418374,79.821517 22.582625,105.1322 35.204051,65.641485 0.98535229,42.234264 42.443494,42.034651 54.130924,2.2575052 67.132038,41.624857 108.57397,40.448449 75.150955,64.978424 Z"
+     inkscape:transform-center-x="0.29012459"
+     inkscape:transform-center-y="-5.1253329" />
+</svg>

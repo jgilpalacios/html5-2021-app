@@ -39,15 +39,15 @@ const FILES_TO_CACHE = [
 
   //'/assets/fonts/nunito/*',
 
-  '/assets/img/bueno.png',
-  '/assets/img/bueno_muerto.png',
+  '/assets/img/bueno.svg',
+  '/assets/img/bueno_muerto.svg',
   '/assets/img/game_over.png',
-  '/assets/img/jefe.png',
-  '/assets/img/jefe_muerto.png',
-  '/assets/img/malo.png',
-  '/assets/img/malo_muerto.png',
-  '/assets/img/shot1.png',
-  '/assets/img/shot2.png',
+  '/assets/img/jefe.svg',
+  '/assets/img/jefe_muerto.svg',
+  '/assets/img/malo.svg',
+  '/assets/img/malo_muerto.svg',
+  '/assets/img/shot1.svg',
+  '/assets/img/shot2.svg',
   '/assets/img/you_win.png',
 
   '/assets/img/characters/char_01.png',
