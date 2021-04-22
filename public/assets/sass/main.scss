@@ -1,0 +1,131 @@
+@import "lib/vars";
+@import "lib/reboot";
+@import "lib/keyframes";
+@import "lib/fontface";
+
+@import "lib/colors";
+@import "lib/typo";
+@import "lib/utils";
+
+@import "partials/layout";
+@import "partials/modals";
+
+///
+//@import "partials/pages/main";
+//@import "partials/pages/menu";
+//@import "partials/pages/pages";
+//@import "partials/pages/splash";
+
+@import "partials/components/lboard";
+@import "partials/components/toggle";
+@import "partials/components/settings";
+@import "partials/components/theme_option";
+
+
+@import "partials/keyframes";
+
+:root {
+    --color1_1: #{map-get(map-get($themes, "theme_01"), "color1")};
+    --color2_1: #{map-get(map-get($themes, "theme_01"), "color2")};
+    --color3_1: #{map-get(map-get($themes, "theme_01"), "color3")};
+    --color4_1: #{map-get(map-get($themes, "theme_01"), "gray")};
+    --color5_1: #{map-get(map-get($themes, "theme_01"), "grayLight")};
+    --color1_2: #{map-get(map-get($themes, "theme_02"), "color1")};
+    --color2_2: #{map-get(map-get($themes, "theme_02"), "color2")};
+    --color3_2: #{map-get(map-get($themes, "theme_02"), "color3")};
+    --color4_2: #{map-get(map-get($themes, "theme_02"), "gray")};
+    --color5_2: #{map-get(map-get($themes, "theme_02"), "grayLight")};
+    --color1_3: #{map-get(map-get($themes, "theme_03"), "color1")};
+    --color2_3: #{map-get(map-get($themes, "theme_03"), "color2")};
+    --color3_3: #{map-get(map-get($themes, "theme_03"), "color3")};
+    --color4_3: #{map-get(map-get($themes, "theme_03"), "gray")};
+    --color5_3: #{map-get(map-get($themes, "theme_03"), "grayLight")};
+}
+
+///
+
+
+
+
+* {
+    &:not(a) {
+        //border: 1px solid pink;
+        //border: none;
+    }
+}
+
+
+#menu_page,
+#settings_page,
+#leaderboard_page,
+#themes_page {
+    //visibility: hidden;
+    display: flex;
+    flex-direction: column;
+
+    header{
+        text-align: center;
+        width: 100%;
+    }
+
+    .hscore {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main,
+    .slider,
+    .lboard {
+        vertical-align: middle;
+        flex-basis: 100%;
+        width: 100%;
+        /////
+        align-items: center;
+
+        .slider_items {
+            
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+
+            .slider_item {
+                max-width: 30%;
+                text-align: center;
+
+                svg {
+                    height: 120px;
+                    width: 100%;
+                }
+            }
+        }
+        ////
+    }
+
+    footer {
+        text-align: center;
+        align-items: center;
+        vertical-align: bottom;
+        width: 100%; 
+    }
+
+}
+
+////
+
+#main_page{
+    display: flex;
+    flex-direction: column;
+
+    .ui {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .game {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}

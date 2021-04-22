@@ -1,0 +1,41 @@
+{
+    "name": "Space invaders",
+    "short_name":"Marcianitos",
+    "icons":[
+        {
+            "src":"assets/img/characters/char_02_192.png",
+            "sizes":"192x192",
+            "type":"image/png"
+        },
+        {
+            "src":"assets/img/characters/maskable_icon.png",
+            "sizes":"240x240",
+            "type":"image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src":"assets/img/svg/icon2.svg",
+            "sizes":"256x256",
+            "type":"image/svg+xml"
+        },
+        {
+            "src":"assets/img/svg/icon2.svg",
+            "sizes":"512x512",
+            "type":"image/svg+xml"
+        },
+        {
+            "src":"assets/img/characters/char_02_512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        },
+        {
+            "src":"assets/img/svg/icon2.svg",
+            "sizes":"640x640",
+            "type":"image/svg+xml"
+        }
+    ],
+    "start_url":"/index.html",
+    "display":"standalone",
+    "background_color":"#333333",
+    "theme_color":"#6200ee"
+}

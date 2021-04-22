@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="manifest" href="manifest.json" >
+
+    <meta name="description" content="Una app de juegos">
+    <meta name="theme-color" content="#6200ee">
+    <meta name="apple-mobile-web-app-title" content="Marcianitos">
+    <meta name="apdle-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="assets/img/characters/char_02.png"> 
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<meta name="theme-color" content="#fafafa" />-->
+
+    <title>Shooter Game</title>
+    <link rel="shortcut icon" href="assets/img/characters/char_01.png" type="image/x-icon">
+
+    <!-- sass compiled -->
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+    <link href="assets/css/main.css.map" />
+
+    <!-- material icons -->
+    <link type="text/css" rel="stylesheet" href="assets/css/materialdesignicons.css" />
+    <link href="assets/css/materialdesignicons.css.map" />
+
+    <!-- swiperjs -->
+    <link rel="stylesheet" href="app/libs/swiper.css" />
+</head>
+
+<body>
+    <!--<div id="app" class="app">-->
+    <div id="app" class="app theme_01">
+
+
+
+
+
+        <!-- 
+            SPLASH PAGE
+            
+            Información sobre splash page.
+
+            -->
+        <!--<section id="splash_page" class="full_window"> -->
+        <section id="splash_page" class="full_window active">
+            <!-- Splash template -->
+            <h1>Splash page</h1>
+            <p>Me animo automáticamente<!--, quieres ver cómo. en app/Animations.js--></p>
+        </section>
+
+
+
+
+
+
+
+        <!-- 
+            MAIN PAGE
+            
+            Página donde está alojado el juego
+            
+            -->
+        <section id="main_page" class="full_window">
+            <!-- Main page UI -->
+            <div class="ui">
+                <div class="lifes">
+                    <span id='livesli' class="amount">3</span>
+                    <span class="icon">
+                        <span class="mdi mdi-cards-heart"></span>
+                    </span>
+                </div>
+                <div class="score">
+                    <span id='scoreli' class="amount">3</span>
+                    <span class="icon">
+                        <span class="mdi mdi-star"></span>
+                    </span>
+                </div>
+                <div class="pause">
+                    <a href="#modal_pause_window" class="pause_btn" id="pause" navigation-type="modal" animation-type="pause_modal">
+                        <span class="mdi mdi-pause-circle-outline"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- Main page Juego!! -->
+            <div class="game">
+                <!--Here comes the gameeee!!-->
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- 
+            VENTANA MODAL PAUSA
+            
+            Ventana modal de pausa
+            
+            -->
+        <section id="modal_pause_window" class="modal_window modal_light">
+            <!-- modal overlay -->
+            <div class="overlay"></div>
+            <!-- modal holder -->
+            <div class="holder">
+                <!-- modal settings -->
+                <div class="settings">
+                    <div class="setting">
+                        <div class="setting_icon">
+                            <span class="mdi mdi-volume-high"></span>
+                        </div>
+                        <div class="setting_label">
+                            Background music
+                        </div>
+                        <div class="setting_toggle">
+                            <div class="toggle">
+                                <span class="mdi mdi-checkbox-blank-circle"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="setting">
+                        <div class="setting_icon">
+                            <span class="mdi mdi-music-note-eighth"></span>
+                        </div>
+                        <div class="setting_label">
+                            Action sounds
+                        </div>
+                        <div class="setting_toggle">
+                            <div class="toggle">
+                                <span class="mdi mdi-checkbox-blank-circle"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- modal ctas -->
+                <a class="btn btn_primary" href="#main_page" navigation-type="modal" animation-type="resume_modal">Back to game</a>
+                <a class="btn btn_secondary" href="#modal_confirm" navigation-type="modal" animation-type="confirm_modal_in">Quit game</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+        <!-- 
+            VENTANA MODAL CONFIRMACIÓN
+            
+            Ventana modal de confirmación
+            
+            -->
+        <section id="modal_confirm" class="modal_window">
+            <!-- modal overlay -->
+            <div class="overlay"></div>
+            <!-- modal holder -->
+            <div class="holder">
+                <!-- modal message -->
+                <div class="message">
+                    If you quit the game, you'll lose all your points.<br />Are
+                    you sure?
+                </div>
+
+                <!-- modal cta -->
+                <div class="cta">
+                    <a class="btn btn_primary" href="#menu_page" navigation-type="animation" animation-type="game_out">Quit</a>
+                    <a class="btn btn_secondary" href="#main_page" navigation-type="modal" animation-type="confirm_modal_out">Cancelar</a>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <div id="swiper_page" class="swiper_section full_window">
+
+            <div class="swiper-wrapper">
+
+            <!-- 
+                PÁGINA DE SETTINGS
+                
+                Página para modificar settings
+                
+                -->
+            <section id="settings_page" class="swiper_item swiper-slide">
+                <header class="header">
+                    <h2>Settings</h2>
+                </header>
+
+                <div class="main">
+                    Página de settings, anímame para ir al menú! <br>
+                    <!--Para ello usa Swiper! -->
+                    <!-- modal overlay -->
+            
+                    <!-- modal settings -->
+                    <div class="settings">
+                        <div class="setting">
+                            <div class="setting_icon">
+                                <span class="mdi mdi-volume-high"></span>
+                            </div>
+                            <div class="setting_label">
+                                Background music
+                            </div>
+                            <div class="setting_toggle">
+                                <div class="toggle">
+                                    <span class="mdi mdi-checkbox-blank-circle"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="setting">
+                            <div class="setting_icon">
+                                <span class="mdi mdi-music-note-eighth"></span>
+                            </div>
+                            <div class="setting_label">
+                                Action sounds
+                            </div>
+                            <div class="setting_toggle">
+                                <div class="toggle">
+                                    <span class="mdi mdi-checkbox-blank-circle"></span>
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <a href="#menu_page" navigation-type="swipe" class="btn btn_primary">Volver al menú<!-- (usa swiper)--></a>
+                </footer>
+            </section>
+
+
+
+
+
+
+            <!-- 
+                MENU PAGE
+                
+                Página de menu
+                
+                -->
+            <section id="menu_page" class="swiper_item swiper-slide">
+            <!--<section id="menu_page" class="full_window active">-->
+                <header class="header">
+                    <h1>Menu principal!</h1>
+                </header>
+                <div class="slider">
+                    <!--Cómo molaría tener aquí alguna animación de los caracteres con SVG!-->
+                    <div class="slider_items">
+                        <div class="slider_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 135 141">
+                                <g class="char_01">
+                                    <path fill="#32F5D2" stroke="#586465" stroke-width="4"
+                                        d="M77.026 15.5l35.94 62.25c4.234 7.333-1.058 16.5-9.526 16.5H31.56c-8.468 0-13.76-9.167-9.526-16.5l35.94-62.25c4.234-7.333 14.818-7.333 19.052 0z"
+                                        class="body" />
+                                    <g class="legs">
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M52 95v26.675L37 136" class="leg_02" />
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M83 95v26.675L96 136" class="leg_01" />
+                                    </g>
+                                    <g class="face">
+                                        <g class="eye_l">
+                                            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="4" d="M60.5 54.5L49 47" class="eye_brow" />
+                                            <circle cx="52" cy="60" r="4" fill="#586465" class="eye" />
+                                        </g>
+                                        <g class="eye_r">
+                                            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="4" d="M70.5 55.5l11-11" class="eye_brow_2" />
+                                            <circle cx="79" cy="59" r="4" fill="#586465" class="eye_2" />
+                                        </g>
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M59 80l7.5-8.5 7.5 8" class="mouth" />
+                                    </g>
+                                </g>
+                            </svg>
+    
+                        </div>
+                        <div class="slider_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 108 128">
+                                <g class="char_02">
+                                    <g class="legs">
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M29 85v26.675L14 126" class="leg_02" />
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M81 85v26.675L94 126" class="leg_01" />
+                                    </g>
+                                    <rect width="104" height="81" x="2" y="2" fill="#F162C1" stroke="#586465"
+                                        stroke-width="4" class="body" rx="14" />
+                                    <g class="face">
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M21 42c0-4.97 5.373-9 12-9s12 4.03 12 9" class="eye_l" />
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M62 42c0-4.97 5.373-9 12-9s12 4.03 12 9" class="eye_r" />
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4"
+                                            d="M62.696 55.626c0 3-3.965 5.432-8.855 5.432-4.89 0-8.855-2.432-8.855-5.432"
+                                            class="mouth" />
+                                    </g>
+                                </g>
+                            </svg>
+    
+                        </div>
+                        <div class="slider_item">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 106 134">
+                                <g class="char_03">
+                                    <g class="legs">
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M38 91v26.675L23 132" class="leg_02" />
+                                        <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="4" d="M69 91v26.675L82 132" class="leg_01" />
+                                    </g>
+                                    <circle cx="53" cy="53" r="51" fill="#30ECF8" stroke="#586465" stroke-width="4"
+                                        class="body" />
+                                    <g class="face">
+                                        <circle cx="39" cy="56" r="4" fill="#586465" class="eye" />
+                                        <circle cx="66" cy="56" r="4" fill="#586465" class="eye_2" />
+                                        <path stroke="#586465" stroke-linecap="round" stroke-width="4" d="M30 53h47"
+                                            class="Line 1" />
+                                        <circle cx="68" cy="82" r="4" fill="#586465" class="mouth" />
+                                    </g>
+                                </g>
+                            </svg>
+    
+                        </div>
+                    </div>
+                    <!-- ---  -->
+                </div>
+
+                <footer class="footer">
+                    <a href="#nada" id="butInstall" class="btn btn_secondary" hidden>INSTALAR APP ...</a>
+                    <a href="#main_page" navigation-type="animation" animation-type="menu_to_game" class="btn btn_primary">Ir al juego</a>
+                    <div class="foot_navigation">
+                        <ul class="inline_menu centered">
+                            <li>
+                                <a href="#settings_page" navigation-type="swipe">
+                                    <span class="mdi mdi-settings"></span>
+                                    <span class="label">Settings<!-- (usa swiper)--></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#leaderboard_page" navigation-type="swipe">
+                                    <span class="mdi mdi-signal"></span>
+                                    <span class="label">High Scores<!-- (usa swiper)--></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#themes_page" navigation-type="swipe">
+                                    <span class="mdi mdi-clipboard-multiple-outline"></span>
+                                    <span class="label">Themes<!-- (usa swiper)--></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 
+                PÁGINA DE HIGH SCORES
+                
+                Página para meter high scores con PWA
+                
+                -->
+            <section id="leaderboard_page" class="swiper_item swiper-slide">
+                <!-- Leaderboard HighScore -->
+                <section class="hscore">
+                    <header class="header">
+                        <h2>High Score</h2>
+                    </header>
+                    <div id="leaderboard_fecha" class="main">
+                        2014
+                    </div>
+                </section>
+
+                <!-- Leaderboard  -->
+                <section class="lboard">
+                    <header class="header">
+                        <h2>Leaderboard</h2>
+                    </header>
+                    <div class="main">
+                        <div class="lboard_table">
+                            <div class="lboard_item">
+                                <div class="lboard_item_name">
+                                    --
+                                </div>
+                                <div class="lboard_item_p">-</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="lboard_item_name">
+                                    --
+                                </div>
+                                <div class="lboard_item_p">-</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="lboard_item_name">
+                                    --
+                                </div>
+                                <div class="lboard_item_p">-</div>
+                            </div>
+                            <div class="lboard_item you">
+                                <div class="lboard_item_name">
+                                   --
+                                </div>
+                                <div class="lboard_item_p">-</div>
+                            </div>
+                            <div class="lboard_item">
+                                <div class="lboard_item_name">
+                                    --
+                                </div>
+                                <div class="lboard_item_p">-</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </section>
+                <a href="#nada" id="borrarleaderboard" class="btn btn_secondary">Borrar tabla</a>
+                <!-- Leaderboard back to menu -->
+                <footer class="footer">
+                    <a href="#menu_page" navigation-type="swipe" class="btn btn_primary">Volver al menú<!-- (usa swiper)--></a>
+                </footer>
+            </section>
+
+            <!-- ////////////////////////  -->
+            <!-- 
+                PÁGINA DE THMES
+                
+                Página para modificar settings
+                
+                -->
+                <section id="themes_page" class="swiper_item swiper-slide">
+                    <header class="header">
+                        <h2>Themes</h2>
+                    </header>
+    
+                    <div class="main">
+                        Página de themes, anímame para ir al menú! <!--<br>
+                        Para ello usa Swiper!-->
+                        
+                        <div class="theme_option theme_01 selected">
+                            <div class="theme_option_label">
+                                Fun & Joy Theme
+                            </div>
+                            <div class="theme_option_circles bolas_01">
+                                <span class="mdi mdi-checkbox-blank-circle color1"></span>
+                                <span class="mdi mdi-checkbox-blank-circle color2"></span>
+                                <span class="mdi mdi-checkbox-blank-circle color3"></span>
+                                <span class="mdi mdi-checkbox-blank-circle colorGray"></span>
+                                <span class="mdi mdi-checkbox-blank-circle colorGrayLight"></span>
+                            </div>
+                        </div>
+                        <div class="theme_option theme_02">
+                            <div class="theme_option_label">
+                                Warmy theme
+                            </div>
+                            <div class="theme_option_circles bolas_02">
+                                <span class="mdi mdi-checkbox-blank-circle color1"></span>
+                                <span class="mdi mdi-checkbox-blank-circle color2"></span>
+                                <span class="mdi mdi-checkbox-blank-circle color3"></span>
+                                <span class="mdi mdi-checkbox-blank-circle colorGray"></span>
+                                <span class="mdi mdi-checkbox-blank-circle colorGrayLight"></span>
+                            </div>
+                        </div>
+                        <div class="theme_option theme_03">
+                            <div class="theme_option_label">
+                                Coldy theme
+                            </div>
+                            <div class="theme_option_circles bolas_01">
+                                <span class="mdi mdi-checkbox-blank-circle color1"></span>
+                                <span class="mdi mdi-checkbox-blank-circle color2"></span>
+                                <span class="mdi mdi-checkbox-blank-circle color3"></span>
+                                <span class="mdi mdi-checkbox-blank-circle colorGray"></span>
+                                <span class="mdi mdi-checkbox-blank-circle colorGrayLight"></span>
+                            </div>
+                        
+                        </div>
+                    </div>
+    
+                    <footer class="footer">
+                        <a href="#menu_page" navigation-type="swipe" class="btn btn_primary">Volver al menú<!-- (usa swiper)--></a>
+                    </footer>
+                </section>
+
+            <!-- ////////////////////////  -->
+
+            </div> <!-- /swipe_wrapper-->
+        </div> <!-- /swipe_section-->
+
+
+
+
+
+
+
+        <!-- 
+            SPINNER
+            
+            Por si se necesita a la hora de hacer un spinner de carga
+            
+            -->
+        <section id="modal_loading_spinner" class="spinner_window">
+            <!-- Spinner -->
+            <span class="spinner">
+                <div class="mdi mdi-loading mdi-spin"></div>
+            </span>
+        </section>
+
+
+    </div>
+
+    <!-- libs -->
+    <script src="app/libs/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+    <script src="app/libs/anime.min.js" type="text/javascript"></script>
+
+    <!-- game -->
+    <script src="app/Game/Game.js" type="text/javascript"></script>
+    <script src="app/Game/Entity.js" type="text/javascript"></script>
+    <script src="app/Game/Character.js" type="text/javascript"></script>
+    <script src="app/Game/Player.js" type="text/javascript"></script>
+    <script src="app/Game/Opponent.js" type="text/javascript"></script>
+    <script src="app/Game/Boss.js" type="text/javascript"></script>
+    <script src="app/Game/Shot.js" type="text/javascript"></script>
+    <script src="app/Game/utils.js" type="text/javascript"></script>
+
+    <!-- ui stuff -->
+    <script src="app/Animations.js" type="text/javascript"></script>
+    <script src="app/Navigation.js" type="text/javascript"></script>
+    <script src="app/UI.js" type="text/javascript"></script>
+
+    <!-- inits -->
+    <script src="app/main.js" type="text/javascript"></script>
+
+    <script>
+    /**
+     * Se añade el service worker para trabajar offline
+     */
+    if('serviceWorker' in navigator){ 
+        window.addEventListener('load', ()=>{ 
+            navigator.serviceWorker.register('service-worker.js').then((reg)=>{
+                console.log("Service worker registered", reg); 
+            })
+        })
+    }
+    </script>
+    <script src="install.js" type="text/javascript"></script>
+</body>
+
+</html>

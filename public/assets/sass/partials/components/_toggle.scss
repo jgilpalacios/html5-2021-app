@@ -1,0 +1,25 @@
+.toggle {
+    height: $base * 2;
+    width: $base * 4;
+    border: 2px solid #666;
+    border-radius: 10px;
+    transition: all 200ms ease;
+
+    &.on {
+        border: 2px solid map-get(map-get($themes, "theme_01"), "color2");
+        color: map-get(map-get($themes, "theme_01"), "color2");
+        transition: all 200ms ease;
+
+        span {
+            transform: translate(3px, 5px) scale(-0.75);
+            transition: all 200ms ease;
+        }
+    }
+
+    span {
+        line-height: 0;
+        transform: translate(-13px, 5px) scale(-0.75);
+        display: block;
+        transition: all 200ms ease;
+    }
+}

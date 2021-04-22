@@ -1,0 +1,79 @@
+#main_page {
+    
+    .ui {
+        margin: 0 0 $base * 4;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+
+        .lifes {
+            display: flex;
+            align-items: center;
+            @extend .color1;
+
+            .amount {
+                order: 1;
+            }
+
+            .icon {
+                margin: 0 $base 0 0;
+
+                .mdi {}
+            }
+        }
+
+        .score {
+            display: flex;
+            align-items: center;
+            transform: translateY(10px);
+            @extend .color2;
+
+            .amount {
+                order: 1;
+            }
+
+            .icon {
+                margin: 0 $base 0 0;
+                font-size: 1.2rem;
+
+                .mdi {}
+            }
+        }
+
+        .pause {
+            font-size: 2rem;
+            @extend .colorGray;
+
+            .pause_btn {
+                display: block;
+
+                .mdi {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .game {
+        width: 100%;
+        flex-basis: 100%;
+        position: relative;
+    }
+}
+
+
+
+
+
+.Opponent {
+    animation: rotation 3s infinite linear;
+    -webkit-animation: rotation 3s infinite linear;
+
+    .paused & {
+        animation: none;
+        -webkit-animation: none;
+    }
+}

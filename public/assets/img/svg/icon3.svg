@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 106 134">
+    <g class="char_03">
+        <g class="legs">
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M38 91v26.675L23 132" class="leg_02" />
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M69 91v26.675L82 132" class="leg_01" />
+        </g>
+        <circle cx="53" cy="53" r="51" fill="#30ECF8" stroke="#586465" stroke-width="4"
+            class="body" />
+        <g class="face">
+            <circle cx="39" cy="56" r="4" fill="#586465" class="eye" />
+            <circle cx="66" cy="56" r="4" fill="#586465" class="eye_2" />
+            <path stroke="#586465" stroke-linecap="round" stroke-width="4" d="M30 53h47"
+                class="Line 1" />
+            <circle cx="68" cy="82" r="4" fill="#586465" class="mouth" />
+        </g>
+    </g>
+</svg>

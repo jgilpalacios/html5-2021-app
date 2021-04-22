@@ -1,0 +1,38 @@
+.lboard_table {
+    width: 100%;
+    counter-reset: item;
+
+    .lboard_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 $base * 2;
+
+        &:first-child {
+            color: var(--color2_1);
+            font-weight: bold;
+        }
+
+        &.you {
+            color: var(--color1_1);
+            font-weight: bold;
+        }
+
+        &::before {
+            counter-increment: item;
+            content: counter(item);
+            min-width: $base * 4;
+            margin-right: $base * 2;
+        }
+
+        &:nth-child(n+10) {
+            display: none;
+        }
+
+        .lboard_item_name {
+            margin-right: auto;
+        }
+
+        .lboard_item_p {}
+    }
+}

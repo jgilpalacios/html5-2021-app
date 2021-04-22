@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 108 128">
+    <g class="char_02">
+        <g class="legs">
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M29 85v26.675L14 126" class="leg_02" />
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M81 85v26.675L94 126" class="leg_01" />
+        </g>
+        <rect width="104" height="81" x="2" y="2" fill="#F162C1" stroke="#586465"
+            stroke-width="4" class="body" rx="14" />
+        <g class="face">
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M21 42c0-4.97 5.373-9 12-9s12 4.03 12 9" class="eye_l" />
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" d="M62 42c0-4.97 5.373-9 12-9s12 4.03 12 9" class="eye_r" />
+            <path stroke="#586465" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4"
+                d="M62.696 55.626c0 3-3.965 5.432-8.855 5.432-4.89 0-8.855-2.432-8.855-5.432"
+                class="mouth" />
+        </g>
+    </g>
+</svg>
